@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <math.h>	
+	
+	main()
+	{
+   	int op, num1, num2, verdadeiro, falso;
+
+	printf("escolha uma operacao matematica/n ");   	
+   	printf(" 1 - soma ");
+   	printf(" 2 - subtacao ");
+   	printf(" 3 - multiplicacao ");
+   	printf(" 4 - divisao ");		
+	scanf("%d",&op);
+   	
+   	printf("digite o primeiro numero ");
+   	scanf("%d",&num1);
+   	
+   	printf("digite o segundo numero ");
+   	scanf("%d",&num2);
+   	
+   	
+   	switch (op)
+{ 		
+   		case 1: //soma   		
+   	if (num1 + num2 >= 0)
+	{		   
+   	printf(" operacao escolhida: SOMA, ");
+   	printf(" numero envolvidos %d + %d ", num1, num2);
+   	printf(" resposta da operacao %d ", num1 + num2);
+   	
+   	falso;
+}else 
+	verdadeiro;
+	{	
+	printf(" operacao com numero negativo..redigite os numeros ");
+}
+	break;
+		   
+		case 2: //subtração 		
+   	if (num1 + num2 >= 0)
+	{		   
+   	printf(" operacao escolhida: subtracao, ");
+   	printf(" numero envolvidos %d - %d ", num1, num2);
+	printf(" resposta da operacao %d ", num1 - num2);
+		   	
+	verdadeiro; 	
+}else
+	falso;	 
+ 	{
+	printf(" operacao com numero negativo..redigite os numeros ");
+}	   
+	break;
+	   
+		case 3: //multiplicação
+   		
+   	if (num1 + num2 >= 0)
+	{		   
+   	printf(" operacao escolhida: multiplicacao, ");
+   	printf(" numero envolvidos %d * %d ", num1, num2);
+   	printf(" resposta da operação %d ", num1 * num2);
+   			
+   	verdadeiro;
+} else
+	falso;
+	{
+	printf(" operacao com numero negativo..redigite os numeros ");
+}
+	   
+		case 4: //divisao
+   		
+   	if (num1 + num2 >= 0)
+	{	   
+   	printf(" operacao escolhida: subtracao: ");
+   	printf(" numero envolvidos %d % %d ", num1, num2);
+   	printf(" resposta da operacao %d ", num1 % num2);  	
+	   		
+   	verdadeiro;	
+} else
+	falso;
+	{
+	printf(" operacao com numero negativo..redigite os numeros ");
+}	   
+	break;
+		
+		default:			
+    printf (" Valor invalido!\n ");		
+}
+   return 0;
+};
